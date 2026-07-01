@@ -2,7 +2,7 @@
 
 Welcome to my Spring Core learning repository!
 
-This repository contains a collection of hands-on projects that I built while learning the fundamentals of the Spring Framework. Each project focuses on different Spring Core concepts and demonstrates them through simple console-based applications.
+This repository contains hands-on projects that I built while learning the fundamentals of the Spring Framework. Each project focuses on a specific Spring Core concept and demonstrates it through practical console-based applications.
 
 ---
 
@@ -20,7 +20,38 @@ This repository contains a collection of hands-on projects that I built while le
 
 ---
 
-## 📂 Projects
+## 📂 Repository Structure
+
+```
+Spring-Core
+│
+├── README.md
+│
+└── VotingApplication
+    ├── README.md
+    ├── pom.xml
+    ├── src
+    ├── mvnw
+    └── ...
+```
+
+The source code of every project follows the standard Maven directory structure.
+
+To view the source code, navigate to:
+
+```
+<Project Name>
+└── src
+    └── main
+        └── java
+            └── com
+                └── example
+                    └── <Project Name>
+```
+
+---
+
+## 🚀 Projects
 
 | No. | Project | Status |
 |:---:|---------|:------:|
@@ -29,9 +60,9 @@ This repository contains a collection of hands-on projects that I built while le
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠️ Technologies Used
 
-- Java 17
+- Java
 - Spring Boot
 - Spring Core
 - Maven
@@ -39,6 +70,10 @@ This repository contains a collection of hands-on projects that I built while le
 
 ---
 
-> This repository will continue to grow as I explore more Spring Core concepts and build additional learning projects.
+## 🎯 Purpose
 
-⭐ Feel free to explore the projects and share your feedback!
+The primary objective of this repository is to strengthen my understanding of Spring Core concepts by implementing them through small, hands-on projects before moving on to larger Spring Boot applications.
+
+---
+
+⭐ More Spring Core projects will be added as I continue my learning journey.
