@@ -1,8 +1,22 @@
 # 🗳️ Voting Application (Spring Core)
 
-A console-based Voting Application developed to practice and understand the core concepts of the Spring Framework.
+A console-based Voting Application developed using Spring Core to understand the fundamental concepts of the Spring Framework. The project demonstrates how Spring manages objects, dependencies, bean scopes, and lifecycle through a simple voting system.
 
-The application allows users to cast votes for different political parties, while an administrator can view all recorded votes. The project focuses on understanding Spring Core rather than building a production-ready application.
+---
+
+## 📁 Source Code Location
+
+The complete source code is located in the following directory:
+
+```
+VotingApplication
+└── src
+    └── main
+        └── java
+            └── com
+                └── example
+                    └── VotingApplication
+```
 
 ---
 
@@ -10,67 +24,66 @@ The application allows users to cast votes for different political parties, whil
 
 - Register multiple users
 - Vote for a political party
-- View all recorded votes
-- In-memory data storage using collections
-- Console-based interaction
+- Display all recorded votes
+- In-memory storage using collections
+- Console-based application
 
 ---
 
 ## 🧩 Spring Concepts Demonstrated
 
-- ✅ Spring IoC Container
-- ✅ Component Scanning (`@Component`)
-- ✅ Bean Scopes
+- Spring IoC Container
+- Component Scanning (`@Component`)
+- Bean Scopes
   - Singleton
   - Prototype
-- ✅ Bean Lifecycle
+- Bean Lifecycle
   - `@PostConstruct`
   - `@PreDestroy`
-- ✅ Manual Dependency Injection
-- ✅ Interfaces & Loose Coupling
-- ✅ Object Relationships (HAS-A)
-- ✅ Collection Handling
+- Manual Dependency Injection
+- Interfaces & Loose Coupling
+- HAS-A Relationship
+- Collections in Spring
 
 ---
 
 ## 🏗️ Project Structure
 
 ```
+PoliticalParty
+├── BJP
+├── INC
+└── AAP
+
+User
+└── SimpleUser
+
+UserList
+└── SimpleUserList
+
+Authority
+└── AuthorityCounter
+
 VotingApplication
-│
-├── PoliticalParty
-│   ├── BJP
-│   ├── INC
-│   └── AAP
-│
-├── User
-│   └── SimpleUser
-│
-├── UserList
-│   └── SimpleUserList
-│
-├── Authority
-│   └── AuthorityCounter
-│
-└── VotingApplication (Main Class)
+└── Main Class
 ```
 
 ---
 
 ## 🔄 Working Flow
 
-1. User enters their name.
-2. User selects a political party.
-3. A new `SimpleUser` object (Prototype Bean) is created.
-4. The selected party is assigned to the user.
-5. The user is added to the common `UserList`.
+1. The user enters their name.
+2. The user selects a political party.
+3. Spring creates a new `SimpleUser` (Prototype Bean).
+4. The selected political party is assigned to the user.
+5. The user is stored in a common `UserList` (Singleton Bean).
 6. The administrator can view all recorded votes.
 
 ---
 
 ## 🛠️ Technologies Used
 
-- Java 17
+- Java
 - Spring Boot
 - Spring Core
 - Maven
@@ -82,40 +95,42 @@ VotingApplication
 
 This project helped me understand:
 
-- Inversion of Control (IoC)
+- Spring IoC (Inversion of Control)
 - Bean Management
-- Singleton vs Prototype Scope
 - Component Scanning
+- Singleton & Prototype Bean Scope
 - Bean Lifecycle
-- Interfaces and Polymorphism
+- Dependency Injection
+- Interfaces & Polymorphism
 - Loose Coupling
 - Object-Oriented Design
 
 ---
 
-## 📌 Future Improvements
+## 📈 Future Improvements
 
-- Store votes in a database (MySQL)
-- Build a REST API using Spring Boot
+- Store data in MySQL
+- Develop REST APIs using Spring Boot
 - Create a web interface
-- Add vote counting and result statistics
+- Add vote counting statistics
 - Implement user authentication
 
 ---
 
-### 📷 Sample Output
+## Sample Console Output
 
 ```
 Enter Your Choice
 
-1. Vote
-2. View Votes
+1. Vote (User)
+2. View Votes (Admin)
 0. Exit
 
 Enter Your Name
 Utkarsh
 
-Choose Political Party
+Choose The Political Party
+
 1. BJP
 2. INC
 3. AAP
@@ -130,4 +145,6 @@ Rahul Voted For : Indian National Congress
 
 ---
 
-> **Note:** This project was developed as part of my Spring Core learning journey to strengthen my understanding of the framework's fundamental concepts.
+## 💡 Note
+
+This project was developed as a learning exercise to practice Spring Core concepts and understand how Spring manages objects, dependencies, bean scopes, and bean lifecycle in a console-based application.
