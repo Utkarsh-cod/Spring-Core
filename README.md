@@ -1,8 +1,8 @@
-# 🌱 Spring Core Learning
+# 🌱 Spring Core & Spring MVC Learning
 
-Welcome to my Spring Core learning repository!
+Welcome to my Spring learning repository!
 
-This repository contains hands-on projects that I built while learning the fundamentals of the Spring Framework. Each project focuses on a specific Spring Core concept and demonstrates it through practical console-based applications.
+This repository contains hands-on projects that I built while learning the fundamentals of the Spring Framework. Each project focuses on a specific Spring concept and demonstrates it through practical applications.
 
 ---
 
@@ -15,8 +15,15 @@ This repository contains hands-on projects that I built while learning the funda
 - Bean Scopes (Singleton & Prototype)
 - Bean Lifecycle (`@PostConstruct`, `@PreDestroy`)
 - Interfaces & Loose Coupling
-- Object-Oriented Programming
+- Spring MVC
+- Controllers
+- Services
+- Repository Layer
+- JSP View Resolver
+- Form Handling
+- Model Object
 - Collections in Spring
+- Object-Oriented Programming
 
 ---
 
@@ -27,17 +34,20 @@ Spring-Core
 │
 ├── README.md
 │
-└── VotingApplication
+├── VotingApplication
+│   ├── README.md
+│   ├── pom.xml
+│   └── src
+│
+└── FlightBookingApplication
     ├── README.md
     ├── pom.xml
-    ├── src
-    ├── mvnw
-    └── ...
+    └── src
 ```
 
-The source code of every project follows the standard Maven directory structure.
+Each project follows the standard Maven directory structure.
 
-To view the source code, navigate to:
+To view the source code of any project, navigate to:
 
 ```
 <Project Name>
@@ -56,15 +66,18 @@ To view the source code, navigate to:
 | No. | Project | Status |
 |:---:|---------|:------:|
 | 1 | Voting Application | ✅ Completed |
-| 2 | More Spring Core Projects | 🚧 Coming Soon |
+| 2 | Flight Booking Application (Spring MVC) | ✅ Completed |
+| 3 | More Spring Projects | 🚧 Coming Soon |
 
 ---
 
 ## 🛠️ Technologies Used
 
 - Java
+- Spring Framework
 - Spring Boot
-- Spring Core
+- Spring MVC
+- JSP
 - Maven
 - Eclipse IDE
 
@@ -72,8 +85,8 @@ To view the source code, navigate to:
 
 ## 🎯 Purpose
 
-The primary objective of this repository is to strengthen my understanding of Spring Core concepts by implementing them through small, hands-on projects before moving on to larger Spring Boot applications.
+The goal of this repository is to strengthen my understanding of Spring by building small projects while learning different concepts step by step. Each project focuses on a particular topic before moving towards larger backend applications using Spring Boot.
 
 ---
 
-⭐ More Spring Core projects will be added as I continue my learning journey.
+⭐ More Spring projects will be added as I continue my learning journey.
